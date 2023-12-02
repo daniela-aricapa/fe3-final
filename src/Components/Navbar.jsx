@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTheme } from '../theme'; // Importa el hook useTheme
+import { useTheme } from '../theme'; 
 
 const Navbar = () => {
-  // Utiliza el hook useTheme para acceder al contexto del tema
+  
   const { currentTheme, toggleTheme } = useTheme();
 
   const navbarStyle = {
-    width: '92.5%', // Establece el ancho del navbar al 90%
+    width: '92.5%', 
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',

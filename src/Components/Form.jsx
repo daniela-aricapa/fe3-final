@@ -20,7 +20,7 @@ const Contacto = () => {
       [name]: value,
     });
 
-    // Realizar validaciones aquí
+  
     validateForm(name, value);
   };
 
@@ -32,7 +32,7 @@ const Contacto = () => {
         errors.nombre = value.length < 5 ? "Nombre demasiado corto" : "";
         break;
       case "email":
-        // Utiliza una expresión regular para validar el formato del correo electrónico
+       
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         errors.email = !emailRegex.test(value) ? "Formato de correo incorrecto" : "";
         break;
@@ -46,11 +46,11 @@ const Contacto = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validar antes de enviar
+    
     if (!formData.nombre || !formData.email || formErrors.nombre || formErrors.email) {
       console.log("Por favor, verifique su información nuevamente");
     } else {
-      // Simular el envío de datos a un servidor (puedes reemplazar esto con una solicitud real)
+    
       console.log(`Gracias ${formData.nombre}, te contactaremos cuanto antes vía mail`);
       setSubmitSuccess(true);
     }

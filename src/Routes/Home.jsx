@@ -1,4 +1,4 @@
-// Página Home
+
 import React, { useEffect, useState } from 'react';
 import Card from '../Components/Card';
 
@@ -7,7 +7,7 @@ const Home = () => {
   const [favoriteDentists, setFavoriteDentists] = useState([]);
 
   useEffect(() => {
-    // Simulación de carga de datos desde una API (reemplaza con tu fuente de datos real)
+    
     const fetchData = async () => {
       try {
         const response = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -20,16 +20,16 @@ const Home = () => {
 
     fetchData();
     
-    // Recupera la lista de dentistas favoritos del Local Storage
+    
     const storedFavoriteDentists = JSON.parse(localStorage.getItem('favoriteDentists')) || [];
     setFavoriteDentists(storedFavoriteDentists);
   }, []);
 
   const addToFavorites = (dentist) => {
-    // Actualiza la lista de favoritos en el estado
+  
     setFavoriteDentists((prevFavorites) => [...prevFavorites, dentist]);
 
-    // Guarda la lista actualizada de dentistas favoritos en el Local Storage
+    
     localStorage.setItem('favoriteDentists', JSON.stringify([...favoriteDentists, dentist]));
   };
 

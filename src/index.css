@@ -1,6 +1,6 @@
 :root {
-  --primary-bg-color: white; /* Color de fondo principal */
-  --primary-text-color: black; /* Color de texto principal */
+  --primary-bg-color: white; 
+  --primary-text-color: black; 
 }
 
 body {
@@ -14,7 +14,6 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Tema oscuro */
 body.dark {
   background-color: #12121296;
   color: white;
@@ -35,17 +34,15 @@ code {
 
 h1, h2, h3 {
   text-align: center;
-  /* Otros estilos de texto comunes aquí */
+ 
 }
 
-/* Tema oscuro para títulos */
+
 .dark h1, .dark h2, .dark h3 {
   color: white;
 }
 
 
-
-/* Tema oscuro */
 nav.dark {
   background-color: #12121296;
   color: white;
@@ -62,7 +59,7 @@ a:hover {
   color: rgb(136, 136, 136);
 }
 
-/* Tema oscuro para enlaces */
+
 .dark a {
   color: white;
 }
@@ -79,7 +76,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* Tema oscuro para el footer */
+
 .dark footer {
   background-color: #12121296;
   color: white;
@@ -144,7 +141,7 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-/* Tema oscuro */
+
 .dark {
   background-color: #12121296;
   color: white;
@@ -159,13 +156,11 @@ tr:nth-child(even) {
 .red-text {
   color: red;
 }
-/* Agrega estilos para el tema oscuro que afectan a toda la página */
+
 body.dark {
   background-color: #12121296;
   color: white;
-  /* Otros estilos para el tema oscuro aquí */
+ 
 }
-
-/* Agrega estilos para el tema oscuro a otros elementos de nivel superior si es necesario */
 
 
